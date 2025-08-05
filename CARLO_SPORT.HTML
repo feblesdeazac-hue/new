@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Sport - Tienda de Tenis y Ropa Boutique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Carlos Sport Logo">
+                <h1>Carlos Sport</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                    <li><a href="#tienda">Tienda</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li class="cart-icon">
+                        <a href="#carrito">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span id="cart-item-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Bienvenido a Carlos Sport</h2>
+                    <p>Tu destino para encontrar el par de tenis perfecto y la ropa deportiva con estilo. Explora nuestra exclusiva selección y vive la experiencia de compra en línea que mereces.</p>
+                    <a href="#tienda" class="btn">Explora Nuestros Productos</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="novedades" class="section">
+            <div class="container">
+                <h2>Novedades y Productos Destacados</h2>
+                <div class="carousel-container">
+                    <div class="carousel-track" id="highlight-carousel-track">
+                        <div class="carousel-item product-item">
+                            <img src="Producto/gorra1.jpg.jpg" alt="Gorra Negra Deportiva">
+                            <h3>Gorra</h3>
+                            <p>$1,100.00</p>
+                            <button class="add-to-cart">Añadir al Carrito</button>
+                        </div>
+                        <div class="carousel-item product-item">
+                            <img src="Producto/combo1.jpg.jpg" alt="Combo de Tenis y Ropa Deportiva">
+                            <h3>Combo Full</h3>
+                            <p>$5,499.00</p>
+                            <button class="add-to-cart">Añadir al Carrito</button>
+                        </div>
+                        <div class="carousel-item product-item">
+                            <img src="Producto/tenis1.jpg.jpg" alt="Tenis Blancos y Negros Urbanos">
+                            <h3>Tenis</h3>
+                            <p>$2,499.00</p>
+                            <button class="add-to-cart">Añadir al Carrito</button>
+                        </div>
+                        <div class="carousel-item product-item">
+                            <img src="Producto/camisa2.jpg.jpg" alt="Camisa de Vestir a Cuadros">
+                            <h3>Camisa de Vestir</h3>
+                            <p>$1,790.00</p>
+                            <button class="add-to-cart">Añadir al Carrito</button>
+                        </div>
+                        <div class="carousel-item product-item">
+                            <img src="Producto/pantalon1.jpg.jpg" alt="Pantalon Jogger Beige">
+                            <h3>Pantalon Jogger B</h3>
+                            <p>$2,900.00</p>
+                            <button class="add-to-cart">Añadir al Carrito</button>
+                        </div>
+                        <div class="carousel-item product-item">
+                            <img src="Producto/abrigo1.jpg.jpg" alt="Sudadera con Capucha Gris">
+                            <h3>Sudadera con Capucha C</h3>
+                            <p>$799.00</p>
+                            <button class="add-to-cart">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                    <button class="carousel-button prev" id="carousel-prev">&#10094;</button>
+                    <button class="carousel-button next" id="carousel-next">&#10095;</button>
+                    <div class="carousel-indicators" id="carousel-indicators">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="quienes-somos" class="section about-us">
+            <div class="container">
+                <h2>Quiénes Somos</h2>
+                <p>Somos un equipo de entusiastas del deporte y la moda que se han unido para ofrecer a nuestros clientes la mejor experiencia de compra de tenis en línea. Con una pasión por la calidad y el servicio, nos esforzamos por ser la tienda en línea de tenis más confiable y popular del mercado. Nuestro equipo está compuesto por expertos en deporte y moda que están siempre dispuestos a ayudar y asesorar a nuestros clientes.</p>
+
+                <h3>Nuestra Misión:</h3>
+                <p>En Carlos Sport, Nuestra Misión es ofrecer a nuestros clientes la mejor selección de tenis de alta calidad, con un servicio excepcional y una experiencia de compra en línea segura y satisfactoria. Queremos que nuestros clientes se sientan como en casa en nuestra tienda en línea y que encuentren el par de tenis perfecto para sus necesidades.</p>
+
+                <h3>Nuestra Visión:</h3>
+                <p>Ser la tienda en línea líder en la venta de tenis, reconocida por nuestra amplia variedad de productos, nuestra atención al cliente y nuestra capacidad para satisfacer las necesidades de nuestros clientes. Queremos ser la primera opción para los amantes del deporte y la moda que buscan tenis de alta calidad y estilo.</p>
+
+                <h3>Nuestros Valores:</h3>
+                <ul>
+                    <li><strong>Calidad:</strong> Ofrecemos productos de alta calidad que satisfacen las necesidades de nuestros clientes. Nos comprometemos a seleccionar los mejores materiales y procesos de fabricación para garantizar la durabilidad y el confort de nuestros tenis.</li>
+                    <li><strong>Servicio:</strong> Nuestro objetivo es proporcionar un servicio excepcional a nuestros clientes, respondiendo a sus preguntas y necesidades de manera oportuna y eficiente. Queremos que nuestros clientes se sientan valorados y atendidos en cada paso de su compra.</li>
+                    <li><strong>Innovación:</strong> Estamos siempre buscando nuevas formas de mejorar nuestra tienda en línea y nuestra oferta de productos para satisfacer las necesidades cambiantes de nuestros clientes. Queremos estar a la vanguardia de la moda y el deporte, y ofrecer productos que sean innovadores y emocionantes.</li>
+                    <li><strong>Sostenibilidad:</strong> Nos comprometemos a reducir nuestro impacto ambiental y a promover prácticas sostenibles en nuestra cadena de suministro. Queremos ser una empresa responsable y respetuosa con el medio ambiente.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="tienda" class="section store">
+            <div class="container">
+                <h2>Nuestra Tienda</h2>
+                <div class="product-grid">
+                    <div class="product-item">
+                        <img src="Producto/combo2.jpg.jpg" alt="Combo de Ropa y Accesorios Deportivos">
+                        <h3>Combo Mix 1</h3>
+                        <p>$5,400.00</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="Producto/chaqueta1.jpg" alt="Chaqueta Deportiva con logo Lakers">
+                        <h3>Chaqueta Lakers</h3>
+                        <p>$7,000.00</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="Producto/chaqueta2.jpg" alt="Chaqueta Deportiva con logo Boston">
+                        <h3>Chaqueta Boston 3</h3>
+                        <p>$7,000.00</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="Producto/correa de vestir.jpg" alt="Correa de Vestir de Cuero Marrón">
+                        <h3>Correa de Vestir</h3>
+                        <p>$1,999.00</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="Producto/pantalon de vestir.jpg" alt="Pantalon de Vestir Gris Oscuro">
+                        <h3>Pantalon de Vestir</h3>
+                        <p>$3,499.00</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="Producto/ZapatosV.jpg" alt="Zapato de Vestir de Piel Clásico">
+                        <h3>Zapato de Vestir de Piel</h3>
+                        <p>$7,999.00</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="Producto/perfume1.jpg.jpg" alt="Perfume de Hombre con diseño moderno">
+                        <h3>Perfume</h3>
+                        <p>$3,800.00</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="Producto/perfume7.jpg.jpg" alt="Perfume para mujer floral">
+                        <h3>Perfume</h3>
+                        <p>$3,800.00</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="Producto/cartera de mujer.jpg" alt="Cartera de Mujer elegante">
+                        <h3>Cartera de Mujer</h3>
+                        <p>$4,200.00</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="Producto/tenis10.jpg.jpg" alt="Tenis Deportivos Blancos y Naranjas">
+                        <h3>Tenis</h3>
+                        <p>$2,500.00</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="Producto/Bermudacortas.jpg" alt="Bermudas Cortas de Jean">
+                        <h3>Bermudas Cortas</h3>
+                        <p>$1,499.00</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="Producto/tenis16.jpg.jpg" alt="Tenis de Moda Grises con Detalles Verdes">
+                        <h3>Tenis de Moda</h3>
+                        <p>$2,200.00</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="Producto/boxer.jpg" alt="Combo de Boxer para Hombre">
+                        <h3>Combo de Boxer</h3>
+                        <p>$999.00</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="Producto/abrigo2.jpg.jpg" alt="Abrigo de Mujer Estilo Casual">
+                        <h3>Abrigo de Mujer</h3>
+                        <p>$1,399.00</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="Producto/poloche1.jpg.jpg" alt="Poloche OVZ Diseño Gráfico">
+                        <h3>Poloche OVZ</h3>
+                        <p>$1,500.00</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="Producto/abrigo2.jpg.jpg" alt="Abrigo de Mujer (Estilo 2)">
+                        <h3>Abrigo de Mujer</h3>
+                        <p>$1,700.00</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="Producto/perfume5.jpg.jpg" alt="Combo de Perfume de Mujer Elegante">
+                        <h3>Combo de Perfume de Mujer</h3>
+                        <p>$9,400.00</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="Producto/tenis15.jpg.jpg" alt="Tenis Deportivos Negros y Grises">
+                        <h3>Tenis para Hombre y Mujer</h3>
+                        <p>$1,399.00</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="Producto/tenis13.jpg.jpg" alt="Tenis de Marca Azules y Blancos">
+                        <h3>Tenis para Hombre y Mujer</h3>
+                        <p>$2,899.00</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="Producto/tenis12.jpg.jpg" alt="Tenis Casuales Verdes">
+                        <h3>Tenis</h3>
+                        <p>$990.00</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="Producto/licras.jpg" alt="Licras Deportivas Levanta Cola">
+                        <h3>Licras Levanta Cola</h3>
+                        <p>$2,400.00</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="carrito" class="section cart-section">
+            <div class="container">
+                <h2>Tu Carrito de Compras</h2>
+                <div id="cart-items">
+                    <p>Tu carrito está vacío.</p>
+                </div>
+                <div class="cart-summary">
+                    <p>Total: <span id="cart-total">$0.00</span></p>
+                    <button class="btn" id="checkout-btn">Continuar al Pago / Solicitar Cotización</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="checkout" class="section checkout-section">
+            <div class="container">
+                <h2>Proceso de Compra / Solicitud de Cotización</h2>
+                <form id="checkout-form">
+                    <h3>Paso 1: Información de Envío/Contacto</h3>
+                    <div class="form-group">
+                        <label for="fullName">Nombre Completo:</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Teléfono:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Dirección de Envío:</label>
+                        <input type="text" id="address" name="address">
+                    </div>
+                    <div class="form-group">
+                        <label for="city">Ciudad:</label>
+                        <input type="text" id="city" name="city">
+                    </div>
+                    <div class="form-group">
+                        <label for="country">País:</label>
+                        <input type="text" id="country" name="country">
+                    </div>
+                    <div class="form-group">
+                        <label for="zipCode">Código Postal:</label>
+                        <input type="text" id="zipCode" name="zipCode">
+                    </div>
+
+                    <h3>Paso 2: (Opcional para Compra) Método de Pago</h3>
+                    <p>Esta sección requeriría integración con pasarelas de pago reales (ej. Stripe, PayPal).</p>
+                    <div class="form-group">
+                        <label><input type="radio" name="paymentMethod" value="creditCard" disabled> Tarjeta de Crédito/Débito (No funcional en esta maqueta)</label><br>
+                        <label><input type="radio" name="paymentMethod" value="paypal" disabled> PayPal (No funcional en esta maqueta)</label>
+                    </div>
+
+                    <h3>Paso 3: Revisión del Pedido / Artículos a Cotizar</h3>
+                    <div id="order-summary">
+                        <p>Los artículos de tu carrito se mostrarán aquí para confirmación.</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Notas Adicionales:</label>
+                        <textarea id="notes" name="notes" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Confirmar Pedido / Enviar Solicitud de Cotización</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="servicios" class="section services">
+            <div class="container">
+                <h2>Nuestros Servicios</h2>
+                <ul>
+                    <li><strong>Venta de tenis:</strong> Ofrecemos una amplia variedad de tenis de alta calidad de diferentes marcas y estilos. Nuestros productos son seleccionados cuidadosamente para garantizar la calidad y el confort.</li>
+                    <li><strong>Envío rápido y seguro:</strong> Ofrecemos envío rápido y seguro a todo el país. Queremos que nuestros clientes reciban sus pedidos de manera rápida y segura.</li>
+                    <li><strong>Atención al cliente:</strong> Nuestro equipo de atención al cliente está disponible para responder a sus preguntas y necesidades. Queremos que nuestros clientes se sientan valorados y atendidos en cada paso de su compra.</li>
+                    <li><strong>Programas de fidelidad y recompensa:</strong> Ofrecemos programas de fidelidad y recompensa para nuestros clientes frecuentes. Queremos recompensar a nuestros clientes leales y hacer que se sientan especiales.</li>
+                    <li><strong>Asesoramiento de estilo:</strong> Nuestro equipo de expertos en moda y deporte está disponible para ofrecer asesoramiento de estilo y recomendaciones de productos. Queremos ayudar a nuestros clientes a encontrar el par de tenis perfecto para sus necesidades y estilo.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="objetivos" class="section goals">
+            <div class="container">
+                <h2>Nuestros Objetivos</h2>
+                <h3>Objetivo Específico:</h3>
+                <p>Aumentar las ventas en un 20% en los próximos 6 meses, mediante la implementación de estrategias de marketing y publicidad efectivas, y la mejora de la experiencia del cliente en nuestra tienda en línea. Queremos lograr esto mediante la creación de contenido atractivo y relevante.</p>
+
+                <h3>Objetivos Estratégicos:</h3>
+                <ul>
+                    <li><strong>Liderazgo en el mercado:</strong> Ser la tienda en línea líder en la venta de tenis, reconocida por nuestra amplia variedad de productos y nuestra atención al cliente. Queremos ser la primera opción para los amantes del deporte y la moda que buscan tenis de alta calidad y estilo.</li>
+                    <li><strong>Diversificación de productos:</strong> Ampliar la oferta de productos para incluir accesorios y ropa deportiva. Queremos ofrecer una variedad de productos que se adapten a las necesidades y estilos de nuestros clientes.</li>
+                    <li><strong>Innovación y tecnología:</strong> Implementar tecnologías de vanguardia para mejorar la experiencia del cliente y aumentar la eficiencia operativa. Queremos estar a la vanguardia de la tecnología y ofrecer una experiencia de compra en línea segura y satisfactoria.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contacto" class="section contact">
+            <div class="container">
+                <h2>Contáctanos</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="contactName">Nombre:</label>
+                        <input type="text" id="contactName" name="contactName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactEmail">Correo Electrónico:</label>
+                        <input type="email" id="contactEmail" name="contactEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactSubject">Asunto:</label>
+                        <input type="text" id="contactSubject" name="contactSubject">
+                    </div>
+                    <div class="form-group">
+                        <label for="contactMessage">Mensaje:</label>
+                        <textarea id="contactMessage" name="contactMessage" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar Mensaje</button>
+                </form>
+                <div class="contact-info">
+                    <p><strong>Correo Electrónico:</strong> info@carlossport.com</p>
+                    <p><strong>Teléfono:</strong> +1 (849)-359-3925</p>
+                    <p><strong>Horario de Atención:</strong> Lunes - Viernes: 8:00 AM - 10:00 PM</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#tienda">Tienda</a></li>
+                    <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                    <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+                    <li><a href="terminos-condiciones.html">Términos y Condiciones</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <p>&copy; 2025 Carlos Sport. Todos los derechos reservados. Autoria de Carlos David Febles</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
